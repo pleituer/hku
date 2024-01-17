@@ -11,7 +11,7 @@
     
     <title>Pain: Hello World</title>
     
-<meta name="keywords" content="cryogen,default">
+<meta name="keywords" content="experimental,cryogen,default">
 
 <meta name="description" content="&gt;:)">
 
@@ -122,6 +122,14 @@ int main(){
 </code></pre>
 </div>
 
+<div id="post-tags">
+    <br/> 
+    <b>Tags: </b>
+    
+    <a href="/hku/tags-output/experimental/">experimental</a>
+    
+</div>
+
 <br/>
 
     <div id="prev-next">
@@ -149,6 +157,29 @@ int main(){
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="/hku/js/scripts.js" type="application/javascript"></script>
 
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var elements = document.getElementsByClassName("katex-container");
+        Array.prototype.forEach.call(elements, function(element) {
+            renderMathInElement(element, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+                    {left: "\\begin{align}", right: "\\end{align}", display: true},
+                    {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+                    {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+                    {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+                    {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
