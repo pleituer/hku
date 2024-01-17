@@ -93,6 +93,8 @@
 
     <ul>
         
+        <li><a href="/hku/tags-output/experimental/">experimental</a></li>
+        
         <li><a href="/hku/tags-output/cryogen/">cryogen</a></li>
         
         <li><a href="/hku/tags-output/default/">default</a></li>
@@ -111,6 +113,29 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="/hku/js/scripts.js" type="application/javascript"></script>
 
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var elements = document.getElementsByClassName("katex-container");
+        Array.prototype.forEach.call(elements, function(element) {
+            renderMathInElement(element, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+                    {left: "\\begin{align}", right: "\\end{align}", display: true},
+                    {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+                    {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+                    {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+                    {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
