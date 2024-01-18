@@ -30,37 +30,36 @@ h1 {
     font-size: 46px;
     line-height: 42px;
     letter-spacing: -1px;
-    color: #111;
+    color: #EEE;
 }
 
 h2 {
     margin: 30px 0 15px 0;
     font-weight: 350;
     font-family: "Montserrat";
-    text-transform: uppercase;
-    font-size: 23px;
+    font-size: 32px;
     line-height: 21px;
     letter-spacing: -0.5px;
-    color: #111;
+    color: #EEE;
 }
 
 h3 {
     margin: 26px 0 13px 0;
     font-weight: 200;
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: 22px;
     line-height: 16px;
     letter-spacing: -0.4px;
-    color: #111;
+    color: #EEE;
 }
 
 h4, h5, h6 {
     margin: 20px 0 10px 0;
     font-weight: 100;
     font-family: "Montserrat";
-    font-size: 12px;
+    font-size: 15px;
     line-height: 12px;
-    color: #111;
+    color: #EEE;
 }
 
 ul {
@@ -101,9 +100,9 @@ hr {
 }
 
 blockquote {
-    background: #EEE;
+    background: #222;
     margin: 0 0 5px 0 !important;
-    color: #555;
+    color: #999;
     border-left: 5px solid #145aa9;
     padding: 15px;
     font-style: italic;

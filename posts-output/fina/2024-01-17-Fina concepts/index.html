@@ -9,20 +9,20 @@
     <!-- Modified to fit Cryogen.-->
     <meta charset="UTF-8">
     
-    <title>Pain: Hello World</title>
+    <title>Pain: Finance concepts</title>
     
 <meta name="keywords" content="Study,experimental,cryogen,default">
 
-<meta name="description" content="&gt;:)">
+<meta name="description" content="Bonds$A$ (bondholder) buys a bond from $B$ (bond issuer) at a price, which is always fluctuating. After a set time, the maturity, $T$, $B$ will pay back $A$ a set amount, the face value, $F$. Before maturiy, $B$ may pay $A$ annually or semi-annually some percentage of the face value, and the percentage is the coupon rate, which can be 0 for short bonds.">
 
 <meta property="og:description" content="" />
 
 
-<meta property="og:url" content="http://pain.com/hku/posts-output/2024-01-14-huh/" />
+<meta property="og:url" content="http://pain.com/hku/posts-output/fina/2024-01-17-Fina concepts/" />
 <meta property="og:title" content="" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:url" content="http://pain.com/hku/posts-output/2024-01-14-huh/" />
+<meta name="twitter:url" content="http://pain.com/hku/posts-output/fina/2024-01-17-Fina concepts/" />
 <meta name="twitter:title" content="" />
 <meta name="twitter:description" content="" />
 
@@ -103,30 +103,21 @@
 <div id="post">
     <div class="post-header">
     <div id="post-meta" class="row">
-        <strong>2024年1月14日</strong>
+        <strong>2024年1月17日</strong>
         
     </div>
-    <h1>Hello World</h1>
+    <h1>Finance concepts</h1>
 </div>
 <div>
-    
-    <h3>&gt;:)</h3><pre><code class="python">print("Hello World")
-</code></pre><p>heheheha</p><pre><code class="c++">#include &lt;iostream&gt;
-
-using namespace std;
-
-int main(){
-    cout &lt;&lt; "Hello World" &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
+    <ol class="toc"><li><a href="#bonds">Bonds</a></li><li><a href="#forwards">Forwards</a></li><ol><li><a href="#futures">Futures</a></li></ol><li><a href="#options">Options</a></li></ol>
+    <h2 id="bonds">Bonds</h2><div class="katex-container"><p>$A$ (<i style="color:Gold">bondholder</i>) buys a bond from $B$ (<i style="color:Gold">bond issuer</i>) at a <i style="color:Gold">price</i>, which is always fluctuating. After a set time, the <i style="color:Gold">maturity</i>, $T$, $B$ will pay back $A$ a set amount, the <i style="color:Gold">face value</i>, $F$. Before maturiy, $B$ may pay $A$ annually or semi-annually some percentage of the face value, and the percentage is the <i style="color:Gold">coupon rate</i>, which can be 0 for short bonds.</p></div><div class="katex-container"><p>$A$ may make some money off the transaction, assuming <span style="color:LimeGreen">the coupon rate is 0</span>, let the price of the bond to be $B(T)$ (remember price is not fixed, but constantly fluctuating), then the <i style="color:Gold">interest rate</i> or <i style="color:Gold">yield</i>, denoted as $r_T$, satisfies $$B(T)e^{r_TT} = F,$$ implying $$r_T = -\frac{1}{T} \ln \frac{B(T)}{F}.$$ The yield depends on the maturity and is know as a <i style="color:Gold">yield curve</i>.</p><p>The yield/interest rate $r_T$ just now is know as a <i style="color:Gold">continuously compounded</i> interest rate, there are also interest that are <i style="color:Gold">discretely compounded</i>. Moreover, when interest is compounded continuously, the interest rate $r_C$ is known as the annual rate, and if interest is compounded discretely, and say the unit time is $h$ years, then the <i style="color:Gold">one-step interest rate</i> $r = e^{r_C h} - 1$.</p></div><h2 id="forwards">Forwards</h2><div class="katex-container"><p>Say $A$ (<i style="color:Gold">buyer</i>) buys a forward contract from $B$ (<i style="color:Gold">seller</i>), with <i style="color:Gold">maturity</i> $T$ and <i style="color:Gold">strike</i> $K$, then after time $T$, $A$ will legally have to buy one stock of $B$'s at price $K$, regardless of the price of the stock at that time. <i style="color:Gold">Forward price</i>, $F$, also has a similar definition, when the buyer is obligated to buy a stock for the price $F$ and the seller must sell a stock for price $F$ when maturity $T$ is achieved. However, it must be emphasized the difference between forward price and strike, the latter, depending on the value of $K$, may incure some <b style="color:HotPink">initial settlement fee</b>, while for the former, forward prices, <b style="color:HotPink">no inital settlement fee</b> is required. In other words, $F$ is just $K$ when no intial settlement fee is achieved. And the inital settlement fee is always paid when the buyer buys the contract.</p></div><h3 id="futures">Futures</h3><div class="katex-container"><p>Future contracts are very similar to Forwards, but a key difference is futures can be changed daily, that is, the buyer (and the same for the seller), can sell their positions to other people, and <b style="color:HotPink">enter and exit the contract</b>, making futures highly liquid. Moreover, a settlement of the future contracts can occur over a range of dates, instead of just the singular time as in forwards, though typically within a given month.</p><h2 id="options">Options</h2><p>Intuitively, options are like insurance, both sides agree to yet another forwards contract, and the owner of the option would then be gaurenteed not to loose money. For example if $A$ gives $B$ some money so that if the stock at maturity is lower than some threshold, $A$ would not buy the stock by maturity. This acts as an insurance for $A$ so he won't loose money over the original forwards contract. Similarly, the seller of the original contract can also do the same.</p></div>
 </div>
 
 <div id="post-tags">
     <br/> 
     <b>Tags: </b>
     
-    <a href="/hku/tags-output/experimental/">experimental</a>
+    <a href="/hku/tags-output/Study/">Study</a>
     
 </div>
 
@@ -134,10 +125,8 @@ int main(){
 
     <div id="prev-next">
         
-        <a class="button" href="/hku/posts-output/folder0/2024-01-15-hmm/">&laquo; Hmmm</a>
         
-        
-        <a class="right button" href="/hku/posts-output/2020-12-03-docs/">Quick Start Guide &raquo;</a>
+        <a class="right button" href="/hku/posts-output/yooo/2024-01-16-Heheheha/">Heheheha &raquo;</a>
         
     </div>
 

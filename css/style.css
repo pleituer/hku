@@ -41,32 +41,32 @@ html {
 body {
     font-family: "Oxygen", Arial, Verdana, Helvetica, sans-serif;
     font-size: 15px;
-    color: #555;
+    color: #BBB;
     font-weight: 400;
     line-height: 28px;
-    background: #FFF;
+    background: #222;
 
     text-rendering: optimizeLegibility;
     vertical-align: baseline;
 }
 
 ::selection {
-    background: #145aa9;
+    background: #3080db;
     color: #FFF;
 }
 
 ::-moz-selection {
-    background: #145aa9;
+    background: #3080db;
     color: #FFF;
 }
 
 a {
-    color: #145aa9;
+    color: #3080db;
     text-decoration: none;
 }
 
 a:hover {
-    color: #222;
+    color: #1d4e87;
 }
 
 /* ==================================================
@@ -117,7 +117,7 @@ img.imgfull {
     bottom: 0;
     width: 100%;
     max-width: 280px;
-    background: #145aa9;
+    background: #124075;
     color: #FFF;
     z-index: 3;
     overflow-y: auto;
@@ -204,7 +204,7 @@ img.imgfull {
 }
 
 #footercont {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(232, 230, 230, 0.628);
     text-transform: uppercase;
     font-size: 14px;
 }
