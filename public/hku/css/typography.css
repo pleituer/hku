@@ -30,7 +30,7 @@ h1 {
     font-size: 46px;
     line-height: 42px;
     letter-spacing: -1px;
-    color: #EEE;
+    color: var(--header-color);
 }
 
 h2 {
@@ -40,7 +40,7 @@ h2 {
     font-size: 32px;
     line-height: 21px;
     letter-spacing: -0.5px;
-    color: #EEE;
+    color: var(--header-color);
 }
 
 h3 {
@@ -50,7 +50,7 @@ h3 {
     font-size: 22px;
     line-height: 16px;
     letter-spacing: -0.4px;
-    color: #EEE;
+    color: var(--header-color);
 }
 
 h4, h5, h6 {
@@ -59,7 +59,7 @@ h4, h5, h6 {
     font-family: "Montserrat";
     font-size: 15px;
     line-height: 12px;
-    color: #EEE;
+    color: var(--header-color);
 }
 
 ul {
@@ -116,7 +116,7 @@ blockquote p.author {
     text-align: right;
     font-size: 14px;
     letter-spacing: 2px;
-    color: #999;
+    color: var(--blockquote-color);
 }
 
 @media screen and (max-width: 768px) {

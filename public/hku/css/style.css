@@ -41,32 +41,32 @@ html {
 body {
     font-family: "Oxygen", Arial, Verdana, Helvetica, sans-serif;
     font-size: 15px;
-    color: #BBB;
+    color: var(--text-color);
     font-weight: 400;
     line-height: 28px;
-    background: #222;
+    background: var(--background);
 
     text-rendering: optimizeLegibility;
     vertical-align: baseline;
 }
 
 ::selection {
-    background: #3080db;
+    background: var(--main-color);
     color: #FFF;
 }
 
 ::-moz-selection {
-    background: #3080db;
+    background: var(--main-color);
     color: #FFF;
 }
 
 a {
-    color: #3080db;
+    color: var(--main-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: #1d4e87;
+    color: var(--hover-color);
 }
 
 /* ==================================================
@@ -117,7 +117,7 @@ img.imgfull {
     bottom: 0;
     width: 100%;
     max-width: 280px;
-    background: #124075;
+    background: var(--menu-background);
     color: #FFF;
     z-index: 3;
     overflow-y: auto;
@@ -204,7 +204,7 @@ img.imgfull {
 }
 
 #footercont {
-    color: rgba(232, 230, 230, 0.628);
+    color: var(--footer-text-color);
     text-transform: uppercase;
     font-size: 14px;
 }

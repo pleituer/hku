@@ -28,6 +28,7 @@
     {% style "css/reset.css" %}
     {% style "css/style.css" %}
     {% style "css/typography.css" %}
+    <link rel="stylesheet" id="theme-style" href="{{blog-prefix}}/css/light-theme.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow-night-eighties.min.css">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -63,9 +64,18 @@
             <li {%ifequal uri tags-uri %} class="active" {% endifequal %}><a title="Tags" href="{{tags-uri}}">Tags</a></li>
             {% endif %}
             {% for nav-page in navbar-pages %}
+            {% if not nav-page.unlink %}
             <li {%ifequal page.uri nav-page.uri %} class="active" {% endifequal %}>
                 <a href="{{nav-page.uri}}">{{nav-page.title}}</a>
             </li>
+            {% endif %}
+            {% endfor %}
+            {% for nav-page in navbar-pages %}
+            {% if nav-page.unlink %}
+            <li {%ifequal page.uri nav-page.uri %} class="active" {% endifequal %}>
+                <a href="{{nav-page.uri}}">{{nav-page.title}}</a>
+            </li>
+            {% endif %}
             {% endfor %}
             <!---<li><a title="RSS" href="{{rss-uri}}">RSS</a></li>>--->
         </ul>
@@ -122,6 +132,8 @@
         });
     });
 </script>
+
+{% script "js/theme-selector.js" %}
 
 </body>
 </html>

@@ -34,13 +34,13 @@
 
 .button {
     background: none;
-    border: 2px solid #3080db;
-    color: #3080db !important;
+    border: 2px solid var(--main-color);
+    color: var(--main-color) !important;
 }
 
 .button:hover {
-    background: #3080db;
-    color: #000 !important;
+    background: var(--main-color);
+    color: var(--background) !important;
 }
 
 .button:active {
