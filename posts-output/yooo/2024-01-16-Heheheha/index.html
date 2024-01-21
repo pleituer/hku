@@ -40,15 +40,20 @@
     <link href="/hku/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="/hku/css/style.css" rel="stylesheet" type="text/css" />
     <link href="/hku/css/typography.css" rel="stylesheet" type="text/css" />
+    <link href="/hku/css/table.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" id="theme-style" href="/hku/css/light-theme.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow-night-eighties.min.css">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    </head>
 <body>
 
 <div id="left">
@@ -128,7 +133,10 @@
 </div>
 <div>
     
-    <h2 id="lol-p">Lol :P</h2><p><img src="/hku/img/rickroll.gif" alt="Nothing suspicious" /></p><h2 id="latex">Latex?</h2><div class="katex-container"> \[\begin{aligned} x &amp;= 1 + 1 \\ &amp;= 2 \end{aligned}\] </div><h2 id="embed-vids">Embed vids</h2><iframe width="640" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+    <h2 id="lol-p">Lol :P</h2><p><img src="/hku/img/rickroll.gif" alt="Nothing suspicious" /></p><h2 id="latex">Latex?</h2><table><thead><tr><th>Day <span class="katex-container">$k$</span></th><th>Futures Held <span class="katex-container">$\pi_k$</span></th><th>Payment made</th><th>Value at maturity</th></tr></thead><tbody><tr><td>0</td><td><span class="katex-container">$\pi_0 = 1 + r$</span></td><td>0</td><td>0</td></tr><tr><td>1</td><td><span class="katex-container">$\pi_1 = (1+r)\^2$</span></td><td><span class="katex-container">$\pi_0(F_1-F_0)$</span></td><td><span class="katex-container">$p_1$</span></td></tr><tr><td><span class="katex-container">$\cdots$</span></td><td><span class="katex-container">$\cdots$</span></td><td><span class="katex-container">$\cdots$</span></td><td><span class="katex-container">$\cdots$</span></td></tr><tr><td><span class="katex-container">$k$</span></td><td><span class="katex-container">$\pi_k = (1+r)\^{1+k}$</span></td><td><span class="katex-container">$\pi_{k-1}(F_k-F_{k-1})$</span></td><td><span class="katex-container">$p_k$</span></td></tr><tr><td><span class="katex-container">$\cdots$</span></td><td><span class="katex-container">$\cdots$</span></td><td><span class="katex-container">$\cdots$</span></td><td><span class="katex-container">$\cdots$</span></td></tr><tr><td><span class="katex-container">$n$</span></td><td>liquidate</td><td><span class="katex-container">$\pi_{n-1}(F_n-F_{n-1})$</span></td><td><span class="katex-container">$p_n$</span></td></tr></tbody></table><p><span class="katex-container">$1+1=2\<sup>1$</sup></span><sup> and <span class="katex-container">$2+1=3\</span></sup>1$</p><p><span class="katex-container">$$y_o = y_e\^4$$</span></p><style>
+  .katex-version {display: none;}
+  .katex-version::after {content:"0.10.2 or earlier";}
+</style><span class="katex"><span class="katex-mathml">The KaTeX stylesheet is not loaded!</span><span class="katex-version rule">KaTeX stylesheet version: </span></span><p><code>## Embed vids</code></p><p><code>&lt;iframe width="640" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ"&gt;&lt;/iframe&gt;</code></p>
 </div>
 
 <div id="post-tags">
@@ -161,13 +169,6 @@
 
 </div>
 </div>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="/hku/js/highlight.pack.js" type="application/javascript"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script src="/hku/js/scripts.js" type="application/javascript"></script>
-
-
-
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         var elements = document.getElementsByClassName("katex-container");
@@ -189,6 +190,12 @@
         });
     });
 </script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/hku/js/highlight.pack.js" type="application/javascript"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="/hku/js/scripts.js" type="application/javascript"></script>
+
+
 
 <script src="/hku/js/theme-selector.js" type="application/javascript"></script>
 
