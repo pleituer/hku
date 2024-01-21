@@ -3,7 +3,7 @@
  :page-index -1
  :unlink true}
 
-## Theme
+## Theme (Dark/Light/System)
 
 <a class="button" data-type="theme-button" data-theme="light">Light Mode</a>
 

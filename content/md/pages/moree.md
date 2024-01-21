@@ -7,7 +7,7 @@
 
 I got nothing to put here
 
-$$e^{i \pi} + 1 = 0$$
+$$e\\^{i \pi} + 1 = 0$$
 
 ## Lorem Ipsum
 
